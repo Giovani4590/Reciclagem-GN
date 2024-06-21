@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RECICLAGN</title>
+    <link rel="icon" href="img/icone.png" type="image/icontype">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barrio&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stylish&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header><h1>Reciclagn</h1>
+    <nav>
+      <a href="admin.html">Admin</a>
+        <a href="participe.html">Participe</a>
+        <a href="aprenda.html">Aprenda</a>
+        <a href="sobrenos.html">Sobre nós</a>
+    </nav>
+    </header>
+<div class="bottom-line"></div>
+<div class="bg-image"></div>
+<div class="bg-image-3"></div>
+
+<div class="bg-admin">
+    <h2>Cadastrar novo usuário</h2>
+    <form id="userForm">
+        <label for="nomeUsuario">Nome do Usuário:</label><br>
+        <input type="text" id="nomeUsuario" required>
+        <br>
+        <label for="emailUsuario">E-mail:</label><br>
+        <input type="email" id="emailUsuario" placeholder="Insira um e-mail válido" required>
+        <br>
+        <br>
+        <button type="button" onclick="adicionarDados()">Cadastrar</button>
+        <button type="button" onclick="limparCampos()">Limpar campos</button>
+        
+        <br>
+        <br>
+        <label for="pesquisar"></label>
+        <input type="text" id="Pesquisar">
+        <button type="button" onclick="pesquisar()">Pesquisar</button>
+        <br>
+        <br>
+        <button type="button" onclick="excluirTodos()">Excluir tudo</button>
+        
+    </form>
+    <ul id="listaUsuarios"></ul>
+</div>
+
+<div class="bottom-line"></div>
+<br>
+<footer>Equipe GN ®</footer>
+<br>
+<script src="script.js"></script>
+</body>
+</html>
